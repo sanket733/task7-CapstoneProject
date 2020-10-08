@@ -1,0 +1,674 @@
+{
+	"info": {
+		"_postman_id": "cf73db23-2d50-40be-87c2-fe46077fdab4",
+		"name": "Capstone Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "display all products",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "2n5ex31d5411bw3qrt3lv4amlfakn2ao",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "6tmkh56lao8jiwx36j07jbfm9midbnpe",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "0hm7pr012fsoa7c2ddcvhlkoqaus12ku",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "h3f5j0u8jbgbjihfqcyyv9nvt6mxq8es",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/products?searchCriteria[pageSize]=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"rest",
+						"default",
+						"V1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "searchCriteria[pageSize]",
+							"value": "50"
+						}
+					]
+				},
+				"description": "{\n    \"items\": [\n        {\n            \"id\": 5,\n            \"sku\": \"Titan\",\n            \"name\": \"Titan\",\n            \"attribute_set_id\": 4,\n            \"price\": 100,\n            \"status\": 1,\n            \"visibility\": 4,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-09-30 08:28:18\",\n            \"updated_at\": \"2020-10-06 07:16:55\",\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"6\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 5,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/d/o/download_1.jpeg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/d/o/download_1.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/d/o/download_1.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/d/o/download_1.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/d/o/download_1.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"titan\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"2\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Titan\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Titan\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Titan \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"6\"\n                    ]\n                }\n            ]\n        },\n        {\n            \"id\": 6,\n            \"sku\": \"Rolex watch\",\n            \"name\": \"Rolex watch\",\n            \"attribute_set_id\": 4,\n            \"price\": 1000,\n            \"status\": 1,\n            \"visibility\": 4,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-10-06 07:23:11\",\n            \"updated_at\": \"2020-10-06 07:23:11\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"6\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 6,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/r/o/rolex.jpeg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/r/o/rolex.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/r/o/rolex.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/r/o/rolex.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/r/o/rolex.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"rolex-watch\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"2\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Rolex watch\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Rolex watch\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Rolex watch New Rolex watch 2.0 edition\"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"ts_dimensions_length\",\n                    \"value\": \"10.0000\"\n                },\n                {\n                    \"attribute_code\": \"ts_dimensions_width\",\n                    \"value\": \"10.0000\"\n                },\n                {\n                    \"attribute_code\": \"ts_dimensions_height\",\n                    \"value\": \"10.0000\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"6\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"description\",\n                    \"value\": \"<p>New Rolex watch 2.0 edition</p>\"\n                },\n                {\n                    \"attribute_code\": \"short_description\",\n                    \"value\": \"<p>New Rolex watch 2.0 edition</p>\"\n                }\n            ]\n        },\n        {\n            \"id\": 7,\n            \"sku\": \"Tissot watch\",\n            \"name\": \"Tissot watch\",\n            \"attribute_set_id\": 4,\n            \"price\": 800,\n            \"status\": 1,\n            \"visibility\": 4,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-10-06 07:26:09\",\n            \"updated_at\": \"2020-10-06 07:26:09\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"6\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 7,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/t/i/tissot.jpeg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/t/i/tissot.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/t/i/tissot.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/t/i/tissot.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/t/i/tissot.jpeg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"tissot-watch\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"2\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Tissot watch\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Tissot watch\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Tissot watch New tissot watch 3.0 edition\"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"ts_dimensions_length\",\n                    \"value\": \"10.0000\"\n                },\n                {\n                    \"attribute_code\": \"ts_dimensions_width\",\n                    \"value\": \"10.0000\"\n                },\n                {\n                    \"attribute_code\": \"ts_dimensions_height\",\n                    \"value\": \"10.0000\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"6\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"description\",\n                    \"value\": \"<p>New tissot watch 3.0 edition</p>\"\n                },\n                {\n                    \"attribute_code\": \"short_description\",\n                    \"value\": \"<p>New tissot watch 3.0 edition</p>\"\n                }\n            ]\n        },\n        {\n            \"id\": 8,\n            \"sku\": \"Adidas Shoe-red-7\",\n            \"name\": \"Adidas Shoe-red-7\",\n            \"attribute_set_id\": 4,\n            \"price\": 10000,\n            \"status\": 1,\n            \"visibility\": 1,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-10-06 08:18:57\",\n            \"updated_at\": \"2020-10-06 08:18:57\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"5\"\n                    },\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"7\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 8,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/a/d/adidasred.jpg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/a/d/adidasred.jpg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/a/d/adidasred.jpg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/a/d/adidasred.jpg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/a/d/adidasred.jpg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"adidas-shoe-red-7\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Adidas Shoe \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"5\",\n                        \"7\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"color\",\n                    \"value\": \"7\"\n                },\n                {\n                    \"attribute_code\": \"size\",\n                    \"value\": \"4\"\n                }\n            ]\n        },\n        {\n            \"id\": 9,\n            \"sku\": \"Adidas Shoe-red-8\",\n            \"name\": \"Adidas Shoe-red-8\",\n            \"attribute_set_id\": 4,\n            \"price\": 10000,\n            \"status\": 1,\n            \"visibility\": 1,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-10-06 08:18:58\",\n            \"updated_at\": \"2020-10-06 08:18:58\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"5\"\n                    },\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"7\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 9,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/a/d/adidasred_1.jpg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/a/d/adidasred_1.jpg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/a/d/adidasred_1.jpg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/a/d/adidasred_1.jpg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/a/d/adidasred_1.jpg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"adidas-shoe-red-8\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Adidas Shoe \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"5\",\n                        \"7\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"color\",\n                    \"value\": \"7\"\n                },\n                {\n                    \"attribute_code\": \"size\",\n                    \"value\": \"5\"\n                }\n            ]\n        },\n        {\n            \"id\": 10,\n            \"sku\": \"Adidas Shoe-red-9\",\n            \"name\": \"Adidas Shoe-red-9\",\n            \"attribute_set_id\": 4,\n            \"price\": 10000,\n            \"status\": 1,\n            \"visibility\": 1,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-10-06 08:19:00\",\n            \"updated_at\": \"2020-10-06 08:19:00\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"5\"\n                    },\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"7\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 10,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/a/d/adidasred_2.jpg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/a/d/adidasred_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/a/d/adidasred_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/a/d/adidasred_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/a/d/adidasred_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"adidas-shoe-red-9\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Adidas Shoe \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"5\",\n                        \"7\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"color\",\n                    \"value\": \"7\"\n                },\n                {\n                    \"attribute_code\": \"size\",\n                    \"value\": \"6\"\n                }\n            ]\n        },\n        {\n            \"id\": 11,\n            \"sku\": \"Adidas Shoe-black-7\",\n            \"name\": \"Adidas Shoe-black-7\",\n            \"attribute_set_id\": 4,\n            \"price\": 10000,\n            \"status\": 1,\n            \"visibility\": 1,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-10-06 08:19:00\",\n            \"updated_at\": \"2020-10-06 08:19:00\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"5\"\n                    },\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"7\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 11,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/a/d/adidas.jpg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/a/d/adidas.jpg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/a/d/adidas.jpg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/a/d/adidas.jpg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/a/d/adidas.jpg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"adidas-shoe-black-7\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Adidas Shoe \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"5\",\n                        \"7\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"color\",\n                    \"value\": \"8\"\n                },\n                {\n                    \"attribute_code\": \"size\",\n                    \"value\": \"4\"\n                }\n            ]\n        },\n        {\n            \"id\": 12,\n            \"sku\": \"Adidas Shoe-black-8\",\n            \"name\": \"Adidas Shoe-black-8\",\n            \"attribute_set_id\": 4,\n            \"price\": 10000,\n            \"status\": 1,\n            \"visibility\": 1,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-10-06 08:19:01\",\n            \"updated_at\": \"2020-10-06 08:19:01\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"5\"\n                    },\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"7\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 12,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/a/d/adidas_2.jpg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/a/d/adidas_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/a/d/adidas_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/a/d/adidas_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/a/d/adidas_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"adidas-shoe-black-8\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Adidas Shoe \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"5\",\n                        \"7\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"color\",\n                    \"value\": \"8\"\n                },\n                {\n                    \"attribute_code\": \"size\",\n                    \"value\": \"5\"\n                }\n            ]\n        },\n        {\n            \"id\": 13,\n            \"sku\": \"Adidas Shoe-black-9\",\n            \"name\": \"Adidas Shoe-black-9\",\n            \"attribute_set_id\": 4,\n            \"price\": 10000,\n            \"status\": 1,\n            \"visibility\": 1,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-10-06 08:19:02\",\n            \"updated_at\": \"2020-10-06 08:19:02\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"5\"\n                    },\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"7\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 13,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/a/d/adidas_3.jpg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/a/d/adidas_3.jpg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/a/d/adidas_3.jpg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/a/d/adidas_3.jpg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/a/d/adidas_3.jpg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"adidas-shoe-black-9\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Adidas Shoe \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"5\",\n                        \"7\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"color\",\n                    \"value\": \"8\"\n                },\n                {\n                    \"attribute_code\": \"size\",\n                    \"value\": \"6\"\n                }\n            ]\n        },\n        {\n            \"id\": 14,\n            \"sku\": \"Adidas Shoe-blue-7\",\n            \"name\": \"Adidas Shoe-blue-7\",\n            \"attribute_set_id\": 4,\n            \"price\": 10000,\n            \"status\": 1,\n            \"visibility\": 1,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-10-06 08:19:03\",\n            \"updated_at\": \"2020-10-06 08:19:03\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"5\"\n                    },\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"7\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 14,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/a/d/adidasblue.jpg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/a/d/adidasblue.jpg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/a/d/adidasblue.jpg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/a/d/adidasblue.jpg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/a/d/adidasblue.jpg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"adidas-shoe-blue-7\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Adidas Shoe \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"5\",\n                        \"7\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"color\",\n                    \"value\": \"9\"\n                },\n                {\n                    \"attribute_code\": \"size\",\n                    \"value\": \"4\"\n                }\n            ]\n        },\n        {\n            \"id\": 15,\n            \"sku\": \"Adidas Shoe-blue-8\",\n            \"name\": \"Adidas Shoe-blue-8\",\n            \"attribute_set_id\": 4,\n            \"price\": 10000,\n            \"status\": 1,\n            \"visibility\": 1,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-10-06 08:19:03\",\n            \"updated_at\": \"2020-10-06 08:19:03\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"5\"\n                    },\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"7\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 15,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/a/d/adidasblue_1.jpg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/a/d/adidasblue_1.jpg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/a/d/adidasblue_1.jpg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/a/d/adidasblue_1.jpg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/a/d/adidasblue_1.jpg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"adidas-shoe-blue-8\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Adidas Shoe \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"5\",\n                        \"7\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"color\",\n                    \"value\": \"9\"\n                },\n                {\n                    \"attribute_code\": \"size\",\n                    \"value\": \"5\"\n                }\n            ]\n        },\n        {\n            \"id\": 16,\n            \"sku\": \"Adidas Shoe-blue-9\",\n            \"name\": \"Adidas Shoe-blue-9\",\n            \"attribute_set_id\": 4,\n            \"price\": 10000,\n            \"status\": 1,\n            \"visibility\": 1,\n            \"type_id\": \"simple\",\n            \"created_at\": \"2020-10-06 08:19:04\",\n            \"updated_at\": \"2020-10-06 08:19:04\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"5\"\n                    },\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"7\"\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 16,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\",\n                        \"swatch_image\"\n                    ],\n                    \"file\": \"/a/d/adidasblue_2.jpg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/a/d/adidasblue_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/a/d/adidasblue_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/a/d/adidasblue_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"swatch_image\",\n                    \"value\": \"/a/d/adidasblue_2.jpg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"adidas-shoe-blue-9\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Adidas Shoe \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"5\",\n                        \"7\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"color\",\n                    \"value\": \"9\"\n                },\n                {\n                    \"attribute_code\": \"size\",\n                    \"value\": \"6\"\n                }\n            ]\n        },\n        {\n            \"id\": 17,\n            \"sku\": \"Adidas Shoe\",\n            \"name\": \"Adidas Shoe\",\n            \"attribute_set_id\": 4,\n            \"price\": 0,\n            \"status\": 1,\n            \"visibility\": 4,\n            \"type_id\": \"configurable\",\n            \"created_at\": \"2020-10-06 08:19:05\",\n            \"updated_at\": \"2020-10-06 08:19:05\",\n            \"weight\": 10,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"5\"\n                    },\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"7\"\n                    }\n                ],\n                \"configurable_product_options\": [\n                    {\n                        \"id\": 1,\n                        \"attribute_id\": \"93\",\n                        \"label\": \"Color\",\n                        \"position\": 0,\n                        \"values\": [\n                            {\n                                \"value_index\": 7\n                            },\n                            {\n                                \"value_index\": 8\n                            },\n                            {\n                                \"value_index\": 9\n                            }\n                        ],\n                        \"product_id\": 17\n                    },\n                    {\n                        \"id\": 2,\n                        \"attribute_id\": \"138\",\n                        \"label\": \"Size\",\n                        \"position\": 1,\n                        \"values\": [\n                            {\n                                \"value_index\": 4\n                            },\n                            {\n                                \"value_index\": 5\n                            },\n                            {\n                                \"value_index\": 6\n                            }\n                        ],\n                        \"product_id\": 17\n                    }\n                ],\n                \"configurable_product_links\": [\n                    8,\n                    9,\n                    10,\n                    11,\n                    12,\n                    13,\n                    14,\n                    15,\n                    16\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 17,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\"\n                    ],\n                    \"file\": \"/a/d/adidas_1.jpg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/a/d/adidas_1.jpg\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/a/d/adidas_1.jpg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/a/d/adidas_1.jpg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"adidas-shoe\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"2\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"1\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"1\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Adidas Shoe\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Adidas Shoe \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"5\",\n                        \"7\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"size\",\n                    \"value\": \"4\"\n                }\n            ]\n        },\n        {\n            \"id\": 18,\n            \"sku\": \"Watch combo\",\n            \"name\": \"Watch combo\",\n            \"attribute_set_id\": 4,\n            \"price\": 0,\n            \"status\": 1,\n            \"visibility\": 4,\n            \"type_id\": \"bundle\",\n            \"created_at\": \"2020-10-06 08:31:02\",\n            \"updated_at\": \"2020-10-06 08:31:02\",\n            \"weight\": 0,\n            \"extension_attributes\": {\n                \"website_ids\": [\n                    1\n                ],\n                \"category_links\": [\n                    {\n                        \"position\": 0,\n                        \"category_id\": \"8\"\n                    }\n                ],\n                \"bundle_product_options\": [\n                    {\n                        \"option_id\": 1,\n                        \"title\": \"Men Watches\",\n                        \"required\": true,\n                        \"type\": \"select\",\n                        \"position\": 1,\n                        \"sku\": \"Watch combo\",\n                        \"product_links\": [\n                            {\n                                \"id\": \"1\",\n                                \"sku\": \"Titan\",\n                                \"option_id\": 1,\n                                \"qty\": 1,\n                                \"position\": 1,\n                                \"is_default\": true,\n                                \"price\": null,\n                                \"price_type\": null,\n                                \"can_change_quantity\": 0\n                            },\n                            {\n                                \"id\": \"2\",\n                                \"sku\": \"Rolex watch\",\n                                \"option_id\": 1,\n                                \"qty\": 1,\n                                \"position\": 2,\n                                \"is_default\": false,\n                                \"price\": null,\n                                \"price_type\": null,\n                                \"can_change_quantity\": 0\n                            },\n                            {\n                                \"id\": \"3\",\n                                \"sku\": \"Tissot watch\",\n                                \"option_id\": 1,\n                                \"qty\": 1,\n                                \"position\": 3,\n                                \"is_default\": false,\n                                \"price\": null,\n                                \"price_type\": null,\n                                \"can_change_quantity\": 0\n                            }\n                        ]\n                    }\n                ]\n            },\n            \"product_links\": [],\n            \"options\": [],\n            \"media_gallery_entries\": [\n                {\n                    \"id\": 18,\n                    \"media_type\": \"image\",\n                    \"label\": null,\n                    \"position\": 1,\n                    \"disabled\": false,\n                    \"types\": [\n                        \"image\",\n                        \"small_image\",\n                        \"thumbnail\"\n                    ],\n                    \"file\": \"/c/o/combowatch.jpg\"\n                }\n            ],\n            \"tier_prices\": [],\n            \"custom_attributes\": [\n                {\n                    \"attribute_code\": \"image\",\n                    \"value\": \"/c/o/combowatch.jpg\"\n                },\n                {\n                    \"attribute_code\": \"shipment_type\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"small_image\",\n                    \"value\": \"/c/o/combowatch.jpg\"\n                },\n                {\n                    \"attribute_code\": \"thumbnail\",\n                    \"value\": \"/c/o/combowatch.jpg\"\n                },\n                {\n                    \"attribute_code\": \"options_container\",\n                    \"value\": \"container2\"\n                },\n                {\n                    \"attribute_code\": \"url_key\",\n                    \"value\": \"watch-combo\"\n                },\n                {\n                    \"attribute_code\": \"gift_message_available\",\n                    \"value\": \"2\"\n                },\n                {\n                    \"attribute_code\": \"price_view\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"required_options\",\n                    \"value\": \"1\"\n                },\n                {\n                    \"attribute_code\": \"has_options\",\n                    \"value\": \"1\"\n                },\n                {\n                    \"attribute_code\": \"meta_title\",\n                    \"value\": \"Watch combo\"\n                },\n                {\n                    \"attribute_code\": \"sku_type\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_keyword\",\n                    \"value\": \"Watch combo\"\n                },\n                {\n                    \"attribute_code\": \"price_type\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"meta_description\",\n                    \"value\": \"Watch combo \"\n                },\n                {\n                    \"attribute_code\": \"tax_class_id\",\n                    \"value\": \"2\"\n                },\n                {\n                    \"attribute_code\": \"weight_type\",\n                    \"value\": \"0\"\n                },\n                {\n                    \"attribute_code\": \"category_ids\",\n                    \"value\": [\n                        \"8\"\n                    ]\n                },\n                {\n                    \"attribute_code\": \"size\",\n                    \"value\": \"4\"\n                }\n            ]\n        }\n    ],\n    \"search_criteria\": {\n        \"filter_groups\": [],\n        \"page_size\": 50\n    },\n    \"total_count\": 14\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "get customer token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\": \"sanketpadgal3030@gmail.com\",\n\"password\": \"SuperMan3030\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/V1/integration/customer/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"V1",
+						"integration",
+						"customer",
+						"token"
+					]
+				},
+				"description": "{\n\"username\": \"sanketpadgal3030@gmail.com\",\n\"password\": \"SuperMan3030\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Create customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"customer\": {\n    \"email\": \"sanketpadgal@gmail.com\",\n    \"firstname\": \"archit\",\n    \"lastname\": \"joy\",\n    \"addresses\": [\n      {\n        \"defaultShipping\": true,\n        \"defaultBilling\": true,\n        \"firstname\": \"Jane\",\n        \"lastname\": \"Doe\",\n        \"region\": {\n          \"regionCode\": \"NY\",\n          \"region\": \"New York\",\n          \"regionId\": 43\n        },\n        \"postcode\": \"10755\",\n        \"street\": [\n          \"123 Oak Ave\"\n        ],\n        \"city\": \"Purchase\",\n        \"telephone\": \"512-555-1111\",\n        \"countryId\": \"US\"\n      }\n    ]\n  },\n  \"password\": \"SuperMan3030\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"customers"
+					]
+				},
+				"description": "{\n  \"customer\": {\n    \"email\": \"sanketpadgal@gmail.com\",\n    \"firstname\": \"archit\",\n    \"lastname\": \"joy\",\n    \"addresses\": [\n      {\n        \"defaultShipping\": true,\n        \"defaultBilling\": true,\n        \"firstname\": \"Jane\",\n        \"lastname\": \"Doe\",\n        \"region\": {\n          \"regionCode\": \"NY\",\n          \"region\": \"New York\",\n          \"regionId\": 43\n        },\n        \"postcode\": \"10755\",\n        \"street\": [\n          \"123 Oak Ave\"\n        ],\n        \"city\": \"Purchase\",\n        \"telephone\": \"512-555-1111\",\n        \"countryId\": \"US\"\n      }\n    ]\n  },\n  \"password\": \"SuperMan3030\"\n}\n"
+			},
+			"response": []
+		},
+		{
+			"name": "create cart and get its id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "slqwrwfzxk8el9s6ncvw21xp9vuda4nj",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/carts/mine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add item to the cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "slqwrwfzxk8el9s6ncvw21xp9vuda4nj",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cartItem\": {\n    \"sku\": \"Titan\",\n    \"qty\": 1,\n    \"quote_id\": \"16\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/carts/mine/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine",
+						"items"
+					]
+				},
+				"description": "{\n  \"cartItem\": {\n    \"sku\": \"Titan\",\n    \"qty\": 1,\n    \"quote_id\": \"16\"\n  }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "estimate shipping method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "slqwrwfzxk8el9s6ncvw21xp9vuda4nj",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"address\": {\n    \"region\": \"New York\",\n    \"region_id\": 43,\n    \"region_code\": \"NY\",\n    \"country_id\": \"US\",\n    \"street\": [\n      \"123 Oak Ave\"\n    ],\n    \"postcode\": \"10577\",\n    \"city\": \"Purchase\",\n    \"firstname\": \"sam\",\n    \"lastname\": \"joy\",\n    \"customer_id\": 3,\n    \"email\": \"sanketpadgal3030@gamil.com\",\n    \"telephone\": \"7775961595\",\n    \"same_as_billing\": 1\n  }\n}\n\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/carts/mine/estimate-shipping-methods",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine",
+						"estimate-shipping-methods"
+					]
+				},
+				"description": "{\n  \"address\": {\n    \"region\": \"New York\",\n    \"region_id\": 43,\n    \"region_code\": \"NY\",\n    \"country_id\": \"US\",\n    \"street\": [\n      \"123 Oak Ave\"\n    ],\n    \"postcode\": \"10577\",\n    \"city\": \"Purchase\",\n    \"firstname\": \"sam\",\n    \"lastname\": \"joy\",\n    \"customer_id\": 3,\n    \"email\": \"sanketpadgal3030@gamil.com\",\n    \"telephone\": \"7775961595\",\n    \"same_as_billing\": 1\n  }\n}\n\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "get shipping-information",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "slqwrwfzxk8el9s6ncvw21xp9vuda4nj",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"addressInformation\": {\n    \"shipping_address\": {\n      \"region\": \"New York\",\n      \"region_id\": 43,\n      \"region_code\": \"NY\",\n      \"country_id\": \"US\",\n      \"street\": [\n        \"123 Oak Ave\"\n      ],\n      \"postcode\": \"10577\",\n      \"city\": \"Purchase\",\n      \"firstname\": \"sam\",\n      \"lastname\": \"joy\",\n      \"email\": \"sanketpadgal3030@gmail.com\",\n      \"telephone\": \"7775961595\"\n    },\n    \"billing_address\": {\n      \"region\": \"New York\",\n      \"region_id\": 43,\n      \"region_code\": \"NY\",\n      \"country_id\": \"US\",\n      \"street\": [\n        \"123 Oak Ave\"\n      ],\n      \"postcode\": \"10577\",\n      \"city\": \"Purchase\",\n      \"firstname\": \"sam\",\n      \"lastname\": \"joy\",\n      \"email\": \"sanketpadgal@gmail.com\",\n      \"telephone\": \"7775961595\"\n    },\n    \"shipping_carrier_code\": \"simpleshipping\",\n    \"shipping_method_code\": \"simpleshipping\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/carts/mine/shipping-information",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine",
+						"shipping-information"
+					]
+				},
+				"description": "{\n  \"addressInformation\": {\n    \"shipping_address\": {\n      \"region\": \"New York\",\n      \"region_id\": 43,\n      \"region_code\": \"NY\",\n      \"country_id\": \"US\",\n      \"street\": [\n        \"123 Oak Ave\"\n      ],\n      \"postcode\": \"10577\",\n      \"city\": \"Purchase\",\n      \"firstname\": \"sam\",\n      \"lastname\": \"joy\",\n      \"email\": \"sanketpadgal3030@gmail.com\",\n      \"telephone\": \"7775961595\"\n    },\n    \"billing_address\": {\n      \"region\": \"New York\",\n      \"region_id\": 43,\n      \"region_code\": \"NY\",\n      \"country_id\": \"US\",\n      \"street\": [\n        \"123 Oak Ave\"\n      ],\n      \"postcode\": \"10577\",\n      \"city\": \"Purchase\",\n      \"firstname\": \"sam\",\n      \"lastname\": \"joy\",\n      \"email\": \"sanketpadgal@gmail.com\",\n      \"telephone\": \"7775961595\"\n    },\n    \"shipping_carrier_code\": \"simpleshipping\",\n    \"shipping_method_code\": \"simpleshipping\"\n  }\n}\n"
+			},
+			"response": []
+		},
+		{
+			"name": "set payment-information",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "slqwrwfzxk8el9s6ncvw21xp9vuda4nj",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"paymentMethod\": {\n    \"method\": \"cashondelivery\"\n  },\n  \"billing_address\": {\n    \"email\": \"sanketpadgal3030@gmail.com\",\n    \"region\": \"New York\",\n    \"region_id\": 43,\n    \"region_code\": \"NY\",\n    \"country_id\": \"US\",\n    \"street\": [\n      \"123 Oak Ave\"\n    ],\n    \"postcode\": \"10577\",\n    \"city\": \"Purchase\",\n    \"telephone\": \"7775961595\",\n    \"firstname\": \"sam\",\n    \"lastname\": \"joy\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/carts/mine/payment-information",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine",
+						"payment-information"
+					]
+				},
+				"description": "{\n  \"paymentMethod\": {\n    \"method\": \"cashondelivery\"\n  },\n  \"billing_address\": {\n    \"email\": \"sanketpadgal3030@gmail.com\",\n    \"region\": \"New York\",\n    \"region_id\": 43,\n    \"region_code\": \"NY\",\n    \"country_id\": \"US\",\n    \"street\": [\n      \"123 Oak Ave\"\n    ],\n    \"postcode\": \"10577\",\n    \"city\": \"Purchase\",\n    \"telephone\": \"7775961595\",\n    \"firstname\": \"sam\",\n    \"lastname\": \"joy\"\n  }\n}\n"
+			},
+			"response": []
+		},
+		{
+			"name": "get order information as admin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "2n5ex31d5411bw3qrt3lv4amlfakn2ao",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "6tmkh56lao8jiwx36j07jbfm9midbnpe",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "0hm7pr012fsoa7c2ddcvhlkoqaus12ku",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "h3f5j0u8jbgbjihfqcyyv9nvt6mxq8es",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/orders/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"orders",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generate invoice",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "2n5ex31d5411bw3qrt3lv4amlfakn2ao",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "6tmkh56lao8jiwx36j07jbfm9midbnpe",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "0hm7pr012fsoa7c2ddcvhlkoqaus12ku",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "h3f5j0u8jbgbjihfqcyyv9nvt6mxq8es",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"capture\": true,\n  \"notify\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/order/4/invoice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"order",
+						"4",
+						"invoice"
+					]
+				},
+				"description": "{\n  \"capture\": true,\n  \"notify\": true\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "check invoice",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "2n5ex31d5411bw3qrt3lv4amlfakn2ao",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "6tmkh56lao8jiwx36j07jbfm9midbnpe",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "0hm7pr012fsoa7c2ddcvhlkoqaus12ku",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "h3f5j0u8jbgbjihfqcyyv9nvt6mxq8es",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/invoices/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"invoices",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create shippment",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "2n5ex31d5411bw3qrt3lv4amlfakn2ao",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "6tmkh56lao8jiwx36j07jbfm9midbnpe",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "0hm7pr012fsoa7c2ddcvhlkoqaus12ku",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "h3f5j0u8jbgbjihfqcyyv9nvt6mxq8es",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"items\": [\n    {\n      \"order_item_id\": 7,\n      \"qty\": 1\n    }\n  ],\n  \"tracks\": [\n    {\n      \"track_number\": \"1Y-9876543210\",\n      \"title\": \"United Parcel Service\",\n      \"carrier_code\": \"ups\"\n    }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/order/4/ship",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"order",
+						"4",
+						"ship"
+					]
+				},
+				"description": "{\n  \"items\": [\n    {\n      \"order_item_id\": 7,\n      \"qty\": 1\n    }\n  ],\n  \"tracks\": [\n    {\n      \"track_number\": \"1Y-9876543210\",\n      \"title\": \"United Parcel Service\",\n      \"carrier_code\": \"ups\"\n    }\n  ]\n}\n"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
